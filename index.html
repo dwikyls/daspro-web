@@ -17,13 +17,15 @@
                 <li><a href="#formattext">Teks Terformat</a></li>
                 <li><a href="#inline">Inline Formatting Text</a></li>
                 <li><a href="#generic">Generic Element</a></li>
+                <li><a href="#table">Tabel</a></li>
+                <li><a href="#profil">Profil</a></li>
             </ul>
         </nav>
     </header>
-    <hr>
     <main>
         <div class="content">
-            <article class="formattext">
+            <article id="formattext">
+                <hr>
                 <h1>Teks Terformat</h1>
                 <section>
                     <h3>Long Quotation</h3>
@@ -62,7 +64,6 @@
                 </section>
                 <section>
                     <h3>Figure</h3>
-                    <!-- FIGURE -->
                     <p>Dicoding adalah sebuah perusahaan startup yang bertujuan mengembangkan ekosistem developer di Indonesia.
                         Berdiri sejak 5 Januari 2015, Dicoding memiliki platform pembelajaran elektronik di laman Dicoding.com.</p>
                     <figure>
@@ -76,7 +77,7 @@
                 </section>
             </article>
             <hr>
-            <article class="inline">
+            <article id="inline">
                 <h1>Inline Formatting Text</h1>
                 <section>
                     <h3>Anchor</h3>
@@ -138,9 +139,87 @@
                     <p><span class="nama">Dwiky</span> adalah seorang <span class="nama">Pelajar</span></p>
                 </section>
             </article>
+            <article id="table">
+                <h1>Spanning Cell</h1>
+                <section>
+                    <h3>Column Spans</h3>
+                    <table border="1">
+                        <tr>
+                            <th>18:00</th>
+                            <th>19:00</th>
+                            <th>20:00</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Avenger Infinity Wars</td>
+                            <td>It Chapter 2</td>
+                        </tr>
+                        <tr>
+                            <td>One Piece: Stampede</td>
+                            <td>Weathering With You</td>
+                            <td>Gundala</td>
+                        </tr>
+                        <tr>
+                            <td>Gundala</td>
+                            <td colspan="2">Avenger Infinity Wars</td>
+                        </tr>
+                     </table>
+                </section>
+                <section>
+                    <h3>Row Spans</h3>
+                    <table border="1">
+                        <tr>
+                            <th rowspan="3">18:00</th>
+                            <td>Avenger Infinity Wars</td>
+                        </tr>
+                        <tr>
+                            <td>One Piece: Stampede</td>
+                        </tr>
+                        <tr>
+                            <td>Gundala</td>
+                        </tr>
+                     </table>
+                </section>
+            </article>
             <hr>
         </div>
-        <aside></aside>
+        <aside>
+            <article id="profil">
+                <h1>Kota Jember</h1>
+                <section>
+                    <p>Kota Suwar-Suwir</p>
+                    <figure>
+                        <img src="assets/image/jember-badge.png">
+                        <figcaption>Lambang</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h3>Informasi Lainnya</h3>
+                    <table>
+                        <tr>
+                           <th>Negara</th>
+                           <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                           <th>Hari jadi</th>
+                           <td>1 Januari 1929</td>
+                        </tr>
+                        <tr>
+                           <th>Luas Total</th>
+                           <td>3.293 km<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                           <th>Bahasa Daerah</th>
+                           <td>Jawa</td>
+                        </tr>
+                           <tr>
+                           <th>Kode Telepon</th>
+                           <td>+62 331</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+            <hr>
+        </aside>
     </main>
     <footer>
         <p>Copyright all right reserved Dwiky Suhardianto</p>

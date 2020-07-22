@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <section>
+        <section class="jumbotron">
             <h1>Belajar Dasar Pemrograman Web</h1>
         </section>
         <nav>
@@ -18,14 +18,14 @@
                 <li><a href="#inline">Inline Formatting Text</a></li>
                 <li><a href="#generic">Generic Element</a></li>
                 <li><a href="#table">Tabel</a></li>
+                <li><a href="#box">Box Element</a></li>
                 <li><a href="#profil">Profil</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="content">
-            <article id="formattext">
-                <hr>
+            <article id="formattext" class="card">
                 <h1>Teks Terformat</h1>
                 <section>
                     <h3>Long Quotation</h3>
@@ -76,8 +76,7 @@
                         yang telah mendapatkan ijin dan ISBN.</p>
                 </section>
             </article>
-            <hr>
-            <article id="inline">
+            <article id="inline" class="card">
                 <h1>Inline Formatting Text</h1>
                 <section>
                     <h3>Anchor</h3>
@@ -119,8 +118,7 @@
                     <p><mark>dwiky adalah seorang pelajar</mark></p>
                 </section>
             </article>
-            <hr>
-            <article id="generic">
+            <article id="generic" class="card">
                 <h1>Generic Element</h1>
                 <section>
                     <h3>Div</h3>
@@ -139,7 +137,7 @@
                     <p><span class="nama">Dwiky</span> adalah seorang <span class="nama">Pelajar</span></p>
                 </section>
             </article>
-            <article id="table">
+            <article id="table" class="card">
                 <h1>Spanning Cell</h1>
                 <section>
                     <h3>Column Spans</h3>
@@ -180,10 +178,32 @@
                      </table>
                 </section>
             </article>
-            <hr>
+            <article id="box" class="card">
+                <h1>Box Element</h1>
+                <section id="over">
+                    <h3>Overflowing Content</h3>
+                    <p style="overflow: visible;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem.</p>
+                    <p style="overflow: hidden;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure, quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit, tenetur ullam ut voluptas!</p>
+                    <p style="overflow: scroll;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure, quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit, tenetur ullam ut voluptas!</p>
+                    <p style="overflow: auto;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure, quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit, tenetur ullam ut voluptas!</p>
+                </section>
+                <section id="boxz">
+                    <h3>Box Sizing</h3>
+                    <p style="box-sizing: content-box;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure, quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit, tenetur ullam ut voluptas!</p>
+                    <p style="box-sizing: border-box; overflow: scroll;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure, quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit, tenetur ullam ut voluptas!</p>
+                </section>
+                <section id="disrole">
+                    <h3>Display Roles</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Content</li>
+                        <li>Contact</li>
+                    </ul>                    
+                </section>
+            </article>
         </div>
         <aside>
-            <article id="profil">
+            <article id="profil" class="card">
                 <header>
                     <h1>Kota Jember</h1>
                     <section>
@@ -220,7 +240,6 @@
                     </table>
                 </section>
             </article>
-            <hr>
         </aside>
     </main>
     <footer>

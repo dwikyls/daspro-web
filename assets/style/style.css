@@ -12,14 +12,29 @@
 .nama{
     color:red;
 }
+main {
+   padding: 20px;
+}
 body {
-    font-family: 'Quicksand', sans-serif;
- }
- nav a {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
- }
+   font-family: 'Quicksand', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+nav {
+   background-color: #00a2c6;
+   padding: 5px;
+}
+ nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
  nav a:hover {
     font-weight: bold;
  }
@@ -33,6 +48,35 @@ body {
  h3 {
     color: #00a2c6
  }
+#box #over p {
+   height: 200px;
+   width: 200px;
+   background-color: lightgreen;
+}
+#box #boxz p{
+   height: 200px;
+   width: 200px;
+   background-color: lightgreen;
+   border: 1px solid cornflowerblue;
+   padding: 20px;
+}
+#box #disrole li {
+   display: inline;
+   margin-left: 5px;
+}
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+.jumbotron {
+   font-size: 20px;
+   padding: 60px;
+   background-color: #00c8eb;
+   text-align: center;
+   color: white;
+}
  footer {
     padding: 20px;
     color: white;

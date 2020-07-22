@@ -19,12 +19,13 @@
                 <li><a href="#generic">Generic Element</a></li>
                 <li><a href="#table">Tabel</a></li>
                 <li><a href="#box">Box Element</a></li>
+                <li><a href="#rule">Rule</a></li>
                 <li><a href="#profil">Profil</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="content">
+        <div id="content">
             <article id="formattext" class="card">
                 <h1>Teks Terformat</h1>
                 <section>
@@ -199,6 +200,23 @@
                         <li>Content</li>
                         <li>Contact</li>
                     </ul>                    
+                </section>
+            </article>
+            <article id="rule" class="card" style="overflow: auto;">
+                <h1>Rule</h1>
+                <section>
+                    <code>
+                        <pre>
+                            /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px */
+                        @media screen and (max-width: 992px) {
+                          ........
+                         }
+                          /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
+                         @media screen and (max-width: 600px) {
+                            ........
+                         }
+                        </pre>
+                    </code>
                 </section>
             </article>
         </div>
